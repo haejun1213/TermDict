@@ -1,0 +1,27 @@
+<!-- 단어, 설명 추가, 단어 검색, 로컬 스토리지에 보관 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>단어 저장 및 검색</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="search-container">
+        <input type="text" id="search-input" placeholder="단어 검색">
+    </div>
+    <div id="input-container">
+        <input type="text" id="word-input" placeholder="단어">
+        <textarea id="meaning-input" placeholder="의미"></textarea>
+        <textarea id="source-input" placeholder="출처"></textarea>
+        <button id="save-button">저장</button>
+    </div>
+    <div id="output-container">
+        <h2>단어</h2>
+        <div id="word-list"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+#search-container,
+#output-container,
+#input-container {
+    width: 60%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+#search-container {
+    position: relative;
+    text-align: center;
+}
+
+#search-input {
+    position: relative;
+    width: 80%;
+    padding: 15px;
+    font-size: 1.2em;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+@media (min-width: 1200px) {
+    #input-container {
+        position:absolute;
+        top: 20px;
+        right: 20px;
+        width: 15%;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 769 ) and (max-width: 1279) {
+    #input-container {
+        
+        position: relative;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 20px;
+
+    }
+}
+
+#word-input,
+#meaning-input,
+#source-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+#save-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#save-button:hover {
+    background-color: #45a049;
+}
+
+#output-container h2 {
+    text-align: center;
+}
+
+.word-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.word-item .text {
+    flex: 1;
+}
+
+.word-item .actions {
+    display: flex;
+    align-items: center;
+}
+
+.word-item button {
+    margin-left: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.word-item button img {
+    width: 16px;
+    height: 16px;
+}
+
+.word-item.edit-mode .edit-actions {
+    display: flex;
+}
+
+.word-item.edit-mode .text {
+    display: none;
+}
+
+.word-item.edit-mode .edit-inputs {
+    display: flex;
+}
+
+.word-item .edit-actions,
+.word-item .edit-inputs {
+    display: none;
+}
+
+.word-item .edit-inputs input,
+.word-item .edit-inputs textarea {
+    margin-right: 10px;
+}
+

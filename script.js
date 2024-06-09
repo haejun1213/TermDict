@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+window.onload = () => {
     const wordInput = document.getElementById('word-input');
     const meaningInput = document.getElementById('meaning-input');
     const sourceInput = document.getElementById('source-input');
@@ -90,7 +90,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     saveButton.addEventListener('click', saveWord);
     searchInput.addEventListener('input', () => displayWords(searchInput.value));
-    
 
     displayWords();
-});
+};

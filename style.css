@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -48,15 +49,13 @@ body {
     }
 }
 
-@media (min-width: 769 ) and (max-width: 1279) {
+@media (min-width: 769px) and (max-width: 1200px) {
     #input-container {
-        
         position: relative;
         background-color: #fff;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         border-radius: 8px;
         padding: 20px;
-
     }
 }
 
@@ -132,6 +131,8 @@ body {
 
 .word-item.edit-mode .edit-inputs {
     display: flex;
+    flex-direction: column; 
+    width: 100%;
 }
 
 .word-item .edit-actions,
@@ -141,6 +142,11 @@ body {
 
 .word-item .edit-inputs input,
 .word-item .edit-inputs textarea {
-    margin-right: 10px;
+    margin-bottom: 10px; 
+    width: 100%; 
+    box-sizing: border-box;
 }
 
+.word-item .edit-inputs textarea {
+    resize: vertical;
+}
